@@ -14,7 +14,7 @@ const Home = () => {
       icon: <FaLinkedin size={25} />,
       href: "https://www.linkedin.com/in/shikhar-upadhyay-a25793294/ ",
     },
-    // { id: 3, icon: <FaCode size={25} />, href: "https://codepen.io/yourusername" },
+    
   ];
 
   return (
@@ -84,11 +84,13 @@ const Home = () => {
             transition={{ duration: 0.3 }}
             className="relative z-10"
           >
-            <img
-              src="src/components/shikhar.jpg"
-              alt="my profile"
-              className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-pink-500 shadow-xl"
-            />
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#00ff00] shadow-lg shadow-[#00ff00]">
+              <img
+                src="/images/shikhar.jpg"
+                alt="Shikhar"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <motion.div
               animate={{
                 scale: [1, 1.2, 1],
