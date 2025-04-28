@@ -86,7 +86,7 @@ const Home = () => {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#00ff00] shadow-lg shadow-[#00ff00]">
               <img
-                src="./images/shikhar.jpg"
+                src={`${process.env.PUBLIC_URL}/images/shikhar.jpg`}
                 alt="Shikhar"
                 className="w-full h-full object-cover"
               />
